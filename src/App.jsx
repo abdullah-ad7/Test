@@ -7,7 +7,7 @@ import { WINNING_COMBINATIONS } from "./winningCombinations.js";
 
 const PLAYERS = {
   X: "Player 1",
-  O: "Player 2",
+  O: "Player 3",
 };
 
 const initialGameBoard = [
