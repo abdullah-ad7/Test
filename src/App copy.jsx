@@ -1,32 +1,32 @@
 import React, { useEffect, useRef, useState } from "react";
 import Sunburst from 'sunburst-chart';
-import initialData from "./flare.json";
+// import initialData from "./flare.json";
 import * as d3 from "d3";
 
-// const initialData = {
-//   name: "root",
-//   children: [
-//     {
-//       name: "Category 1",
-//       children: [
-//         { name: "Subcategory 1-1", size: 300 },
-//         { name: "Subcategory 1-2", size: 200 },
-//       ],
-//     },
-//     {
-//       name: "Category 2",
-//       children: [
-//         { name: "Subcategory 2-1", size: 100 },
-//         { name: "Subcategory 2-2", size: 400 },
-//         { name: "Subcategory 2-3", size: 250 },
-//       ],
-//     },
-//     {
-//       name: "Category 3",
-//       children: [{ name: "Subcategory 3-1", size: 150 }],
-//     },
-//   ],
-// };
+const initialData = {
+  name: "root",
+  children: [
+    {
+      name: "Category 1",
+      children: [
+        { name: "Subcategory 1-1", size: 300 },
+        { name: "Subcategory 1-2", size: 200 },
+      ],
+    },
+    {
+      name: "Category 2",
+      children: [
+        { name: "Subcategory 2-1", size: 100 },
+        { name: "Subcategory 2-2", size: 400 },
+        { name: "Subcategory 2-3", size: 250 },
+      ],
+    },
+    {
+      name: "Category 3",
+      children: [{ name: "Subcategory 3-1", size: 150 }],
+    },
+  ],
+};
 
 
 const App = () => {
